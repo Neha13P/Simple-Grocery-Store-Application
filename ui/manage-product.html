@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="path/to/custom-favicon.png">
+    <!-- Or specify a different filename for the favicon -->
+    <link rel="icon" type="image/png" href="path/to/custom-favicon.ico">
+    <!-- Specify the size of the favicon (optional) -->
+    <link rel="icon" type="image/png" href="path/to/custom-favicon.ico" sizes="32x32">
+    <!-- Specify a favicon for Apple devices (optional) -->
+    <link rel="apple-touch-icon" href="path/to/custom-apple-favicon.png">
+    <title>GSMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,700">
+    <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/style.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/custom.css"> 
+    
+</head>
+<body class="tooltips">
+    <div class="container">
+    
+        <div class="header content rows-content-header">
+            <button class="button-menu-mobile show-sidebar">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+    
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav visible-lg visible-md limit-chars">
+                            <ul class="breadcrumb">
+                                <a href="index.html">
+                                    <i class="zmdi zmdi-view-dashboard zmdi-hc-fw" title="Orders"></i>
+                                </a>
+                                <a href="manage-product.html">
+                                    <i class="zmdi zmdi-assignment zmdi-hc-fw" title="Products"></i>
+                                </a>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="right content-page">
+            <div class="body content rows scroll-y">
+                <div class="box-info full" id="taskFormContainer">
+                    <h2>Manage Products</h2>
+                    <div class="panel-body pt-0">
+                        <div class="row mb-4">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-sm btn-primary pull-right" data-toggle="modal" data-target="#productModal">
+                                    Add New Product
+                                </button>
+                            </div>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <th>Name</th>
+                            <th>Unit</th>
+                            <th>Price Per Unit</th>
+                            <th style="width: 150px">Action</th>
+                            </thead>
+                            <tbody>
+                                <!-- Each product row -->
+                                <tr data-id="PRODUCT_ID" data-name="PRODUCT_NAME" data-unit="UOM_ID" data-price="PRICE">
+                                <td>Product Name</td>
+                                <td>Unit</td>
+                                <td>Price</td>
+                                <!-- Edit button -->
+                                <td>
+                                  <button class="btn btn-xs btn-warning edit-product">Edit</button>
+                                  <button class="btn btn-xs btn-danger delete-product">Delete</button>
+                                </td>
+                            </tr>
+                            <!-- Repeat this structure for each product -->
+    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade-scale" id="productModal" role="dialog" data-backdrop="static">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add New Product</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="productForm">
+                            <input type="hidden" name="id" id="id" value="0">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label >Name</label>
+                                        <input class="form-control" placeholder="Name" name="name" id="name" type="text" value="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label >Unit</label>
+                                        <select name="uoms" id="uoms" class="form-control">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label >Price Per Unit</label>
+                                        <input class="form-control" placeholder="Price Per Unit" name="price" id="price" type="text" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="saveProduct">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/packages/jquery.min.js"></script> 
+    <script src="js/packages/bootstrap.min.js"></script>
+    <script src="js/custom/common.js"></script> 
+    <script src="js/custom/manage-product.js"></script>
+</body>
+</html>
