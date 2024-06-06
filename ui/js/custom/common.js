@@ -57,6 +57,54 @@ function productDropParser(product) {
     }
 }
 
+$("#saveOrder").on("click", function(){
+    var formData = $("form").serializeArray();
+    var requestPayload = {
+        customer_name: null,
+        grand_total: null, // Change 'total' to 'grand_total'
+        order_details: []
+    };
+    var orderDetails = [];
+    for(var i=0;i<formData.length;++i) {
+        var element = formData[i];
+        var lastElement = null;
+
+        switch(element.name) {
+            case 'customerName':
+                requestPayload.customer_name = element.value;
+                break;
+            case 'product_grand_total':
+                requestPayload.grand_total = element.value; // Change 'total' to 'grand_total'
+                break;
+            case 'product':
+                requestPayload.order_details.push({
+                    product_id: element.value,
+                    quantity: null,
+                    total_price: null
+                });                
+                break;
+            case 'qty':
+                lastElement = requestPayload.order_details[requestPayload.order_details.length-1];
+                lastElement.quantity = element.value;
+                break;
+            case 'item_total':
+                lastElement = requestPayload.order_details[requestPayload.order_details.length-1];
+                lastElement.total_price = element.value;
+                break;
+        }
+    }
+    callApi("POST", orderSaveApiUrl, {
+        'data': JSON.stringify(requestPayload)
+    }).done(function (response) {
+        // Order saved successfully, redirect to index.html
+        window.location.href = 'index.html';
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        // Handle AJAX error
+        console.error('Error saving order:', errorThrown);
+    });
+});
+
+
 //To enable bootstrap tooltip globally
 // $(function () {
 //     $('[data-toggle="tooltip"]').tooltip()

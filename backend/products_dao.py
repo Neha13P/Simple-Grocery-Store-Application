@@ -21,16 +21,19 @@ def get_all_products(connection):
 
     return response
 
-def insert_new_product(connection,product):
-    cursor=connection.cursor()
-    query = ("INSERT INTO products "
-             "(name, uom_id, price_per_unit) "
-             "values (%s, %s, %s)")
-    data = (product['product_name'],product['uom_id'],product['price_per_unit'])
-    cursor.execute(query, data)
-    connection.commit()
-
-    return cursor.lastrowid
+def insert_new_product(connection, product):
+    try:
+        cursor = connection.cursor()
+        query = ("INSERT INTO products "
+                 "(name, uom_id, price_per_unit) "
+                 "values (%s, %s, %s)")
+        data = (product['product_name'], product['uom_id'], product['price_per_unit'])
+        cursor.execute(query, data)
+        connection.commit()
+        return cursor.lastrowid
+    except Exception as e:
+        logging.error("Error inserting product: %s", e)
+        raise
 
 def edit_product(connection, product_id, new_product_data):
     try:
@@ -47,6 +50,7 @@ def edit_product(connection, product_id, new_product_data):
     except Exception as e:
         logging.error("Error editing product: %s", e)
         raise
+
 
 
 def delete_product(connection, product_id):

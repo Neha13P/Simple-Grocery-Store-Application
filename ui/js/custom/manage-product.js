@@ -67,6 +67,8 @@ $("#saveProduct").on("click", function () {
         }
     }
 
+    console.log('Request Payload:', requestPayload); // Log request payload for debugging
+
     // Send AJAX request to save product
     callApi("POST", productSaveApiUrl, {
         'data': JSON.stringify(requestPayload)
@@ -76,6 +78,17 @@ $("#saveProduct").on("click", function () {
     }).fail(function (jqXHR, textStatus, errorThrown) {
         // Handle AJAX error
         console.error('Error saving product:', errorThrown);
+    });
+
+    // Send AJAX request to update product
+    callApi("POST", productUpdateApiUrl, {
+        'data': JSON.stringify(requestPayload)
+    }).done(function (response) {
+        // Product updated successfully, update product list
+        populateProductList();
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        // Handle AJAX error
+        console.error('Error updating product:', errorThrown);
     });
 
     // Close modal after saving

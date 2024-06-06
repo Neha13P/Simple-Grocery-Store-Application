@@ -3814,3 +3814,279 @@ INFO:werkzeug:127.0.0.1 - - [01/Jun/2024 21:27:49] "[35m[1mPOST /insertOrder H
 INFO:werkzeug:127.0.0.1 - - [01/Jun/2024 21:27:52] "GET /getAllOrders HTTP/1.1" 200 -
 INFO:root:Product data fetched successfully
 INFO:werkzeug:127.0.0.1 - - [01/Jun/2024 21:32:35] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:01:10] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:01:21] "GET /getUOM HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:01:43] "POST /insertProduct HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:01:43] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:01:48] "GET /getUOM HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:01:55] "POST /insertProduct HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:01:55] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:02:05] "GET /getUOM HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:02:14] "GET /getUOM HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:18:03] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:18:08] "POST /deleteProduct HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:18:08] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:18:11] "GET /getUOM HTTP/1.1" 200 -
+ERROR:root:Error editing product: 'new_product_data'
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:18:16] "[35m[1mPOST /editProduct HTTP/1.1[0m" 500 -
+ERROR:root:Error editing product: 'new_product_data'
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:18:17] "[35m[1mPOST /editProduct HTTP/1.1[0m" 500 -
+ERROR:root:Error editing product: 'new_product_data'
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:18:18] "[35m[1mPOST /editProduct HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:27:34] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:27:38] "GET /getUOM HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:27:45] "POST /insertProduct HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:27:45] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:27:56] "GET /getUOM HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:28:19] "POST /insertProduct HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:28:19] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:28:27] "POST /deleteProduct HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:28:27] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:28:29] "GET /getUOM HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:38:56] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:38:59] "GET /getUOM HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:39:12] "POST /insertProduct HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:39:12] "GET /getProducts HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:41:28] "GET /getProducts HTTP/1.1" 200 -
+ERROR:server:Exception on /insertOrder [POST]
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 697, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '45' for key 'order_details.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\server.py", line 46, in insert_order
+    order_id = orders_dao.insert_order(connection, request_payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\orders_dao.py", line 27, in insert_order
+    cursor.executemany(order_details_query, order_details_data)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 509, in executemany
+    self.execute(operation, params)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 372, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 102, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 705, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '45' for key 'order_details.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:41:48] "[35m[1mPOST /insertOrder HTTP/1.1[0m" 500 -
+ERROR:server:Exception on /insertOrder [POST]
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 697, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '46' for key 'order_details.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\server.py", line 46, in insert_order
+    order_id = orders_dao.insert_order(connection, request_payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\orders_dao.py", line 27, in insert_order
+    cursor.executemany(order_details_query, order_details_data)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 509, in executemany
+    self.execute(operation, params)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 372, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 102, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 705, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '46' for key 'order_details.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:41:50] "[35m[1mPOST /insertOrder HTTP/1.1[0m" 500 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:41:53] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:42:00] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:44:10] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:44:20] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:44:22] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:44:37] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:48:18] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:48:21] "GET /getProducts HTTP/1.1" 200 -
+ERROR:server:Exception on /insertOrder [POST]
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 697, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '47' for key 'order_details.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\server.py", line 46, in insert_order
+    order_id = orders_dao.insert_order(connection, request_payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\orders_dao.py", line 27, in insert_order
+    cursor.executemany(order_details_query, order_details_data)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 509, in executemany
+    self.execute(operation, params)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 372, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 102, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 705, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '47' for key 'order_details.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:48:36] "[35m[1mPOST /insertOrder HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:48:44] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:49:53] "GET /getProducts HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:55:00] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:55:15] "POST /insertOrder HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:55:15] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 22:55:25] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:00:26] "GET /getProducts HTTP/1.1" 200 -
+ERROR:server:Exception on /insertOrder [POST]
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\server.py", line 46, in insert_order
+    order_id = orders_dao.insert_order(connection, request_payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\orders_dao.py", line 25, in insert_order
+    float(order_detail_record['total_price'])
+ValueError: could not convert string to float: ''
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:00:55] "[35m[1mPOST /insertOrder HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:01:00] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:01:31] "GET /getProducts HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:06:19] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:06:33] "POST /insertOrder HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:06:33] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:06:38] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:09:52] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:10:08] "POST /insertOrder HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:10:08] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:10:12] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:15:16] "GET /getProducts HTTP/1.1" 200 -
+ERROR:server:Exception on /insertOrder [POST]
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 697, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Duplicate entry '52' for key 'order_details.PRIMARY'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\server.py", line 46, in insert_order
+    order_id = orders_dao.insert_order(connection, request_payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\backend\orders_dao.py", line 27, in insert_order
+    cursor.executemany(order_details_query, order_details_data)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 509, in executemany
+    self.execute(operation, params)
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\cursor_cext.py", line 372, in execute
+    result = self._cnx.cmd_query(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\opentelemetry\context_propagation.py", line 102, in wrapper
+    return method(cnx, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nehaa\OneDrive\Desktop\GroceryStoreAppln\Lib\site-packages\mysql\connector\connection_cext.py", line 705, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.IntegrityError: 1062 (23000): Duplicate entry '52' for key 'order_details.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:15:31] "[35m[1mPOST /insertOrder HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:15:38] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:18:41] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:18:52] "POST /insertOrder HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:18:52] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:18:57] "GET /getAllOrders HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:19:31] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:19:40] "POST /insertOrder HTTP/1.1" 200 -
+INFO:root:Product data fetched successfully
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:19:40] "GET /getProducts HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [06/Jun/2024 23:19:45] "GET /getAllOrders HTTP/1.1" 200 -
